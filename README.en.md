@@ -1,5 +1,3 @@
-# README.en.md (English)
-
 # MUSASHI Player ROS 2
 
 [日本語](README.md)
