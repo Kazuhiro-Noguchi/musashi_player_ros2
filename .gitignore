@@ -1,0 +1,82 @@
+# ROS 2 / colcon
+build/
+install/
+log/
+
+# Colcon metadata
+.colcon/
+.colcon_install_layout
+
+# Python
+**pycache**/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# C/C++
+*.o
+*.obj
+*.so
+*.a
+*.la
+*.lo
+*.dylib
+*.dll
+*.exe
+*.out
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Makefile
+
+# VS Code
+.vscode/
+
+# Docker
+docker-compose.override.yml
+
+# Environment files
+.env
+
+# Gazebo
+*.state
+*.db
+gazebo.log
+
+# ROS bags
+*.bag
+*.bag.active
+*.mcap
+
+# RViz
+*.rviz.bak
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Generated documentation
+docs/_build/
+
+# Ignore local development artifacts
+.cache/

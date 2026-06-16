@@ -1,0 +1,26 @@
+services:
+  musashi_player:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+
+    container_name: musashi_player
+
+    network_mode: host
+
+    privileged: true
+
+    stdin_open: true
+    tty: true
+
+    environment:
+      DISPLAY: ${DISPLAY}
+      QT_X11_NO_MITSHM: "1"
+
+    volumes:
+      - .:/workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+
+    working_dir: /workspace
+
+    command: /bin/bash
